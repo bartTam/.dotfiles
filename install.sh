@@ -23,3 +23,6 @@ for FILE in shared.vimrc tabs.vimrc python.vimrc plugin.vim
 do
     ln -sf $PWD/$FILE $NVIM_CONFIG/$FILE
 done
+
+# Install tmux config files
+ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
