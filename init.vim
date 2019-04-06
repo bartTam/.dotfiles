@@ -1,9 +1,3 @@
-set shiftwidth=4
-set tabstop=4
-set expandtab
+source $HOME/.config/nvim/conifg/shared.vimrc
+source $HOME/.config/nvim/config/plugin.vim
 
-call plug#begin()
-Plug 'neomake/neomake'
-call plug#end()
-
-call neomake#configure#automake('nrwi', 500)
