@@ -19,7 +19,7 @@ ensure_directory "$NVIM_DIR"
 ensure_directory "$NVIM_CONFIG"
 ln -sf $PWD/init.vim $NVIM_DIR/init.vim
 ln -sf $PWD/.vimrc $HOME/.vimrc
-for FILE in shared.vimrc tabs.vimrc python.vimrc plugin.vim 
+for FILE in shared.vimrc tabs.vimrc format.vimrc python.vimrc plugin.vim 
 do
     ln -sf $PWD/$FILE $NVIM_CONFIG/$FILE
 done
