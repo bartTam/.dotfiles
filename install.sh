@@ -23,7 +23,11 @@ for FILE in shared.vimrc tabs.vimrc format.vimrc python.vimrc plugin.vim
 do
     ln -sf $PWD/$FILE $NVIM_CONFIG/$FILE
 done
+
 # Install vim-plug for nvim
+# Taken from vim-plug github: https://github.com/junegunn/vim-plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install tmux config files
 ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
