@@ -24,6 +24,9 @@ for FILE in shared.vimrc tabs.vimrc format.vimrc python.vimrc plugin.vim
 do
     ln -sf $PWD/$FILE $NVIM_CONFIG/$FILE
 done
+if [ -f specific.vim ]; then
+    ln -sf $PWD/specific.vim $NVIM_CONFIG/specific.vim
+fi
 
 # Install plug
 ensure_directory "$PLUGIN_DIR"
