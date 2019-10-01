@@ -3,13 +3,14 @@
 # Ensure that a directory exists
 ensure_directory () {
 	if [ ! -d $1 ]; then
-		mkdir $1
+		mkdir -p $1
 	fi
 }
 PWD=$(pwd)
 CONFIG_DIR=$HOME/.config
 NVIM_DIR=$CONFIG_DIR/nvim
 NVIM_CONFIG=$NVIM_DIR/config
+PLUGIN_DIR=$HOME/.local/share/nvim/site/autoload
 
 # Install config files
 ensure_directory "$CONFIG_DIR"
@@ -23,6 +24,10 @@ for FILE in shared.vimrc tabs.vimrc format.vimrc python.vimrc plugin.vim
 do
     ln -sf $PWD/$FILE $NVIM_CONFIG/$FILE
 done
+
+# Install plug
+ensure_directory "$PLUGIN_DIR"
+curl -fLo "$PLUGIN_DIR/plug.vim" --create-dir 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install tmux config files
 ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
