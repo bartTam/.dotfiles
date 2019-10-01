@@ -11,6 +11,7 @@ Plug 'neomake/neomake'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
+Plug 'amiorin/vim-project'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)
