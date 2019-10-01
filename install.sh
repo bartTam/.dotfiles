@@ -34,3 +34,6 @@ curl -fLo "$PLUGIN_DIR/plug.vim" --create-dir 'https://raw.githubusercontent.com
 
 # Install tmux config files
 ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
+
+# Install screen config files
+ln -sf $PWD/.screenrc $HOME/.screenrc
