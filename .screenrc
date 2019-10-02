@@ -1,1 +1,8 @@
+# colors
 term screen-256color
+
+# residual editor text
+altscreen on
+
+# Escape key
+maptimeout 10
