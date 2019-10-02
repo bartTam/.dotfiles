@@ -11,6 +11,7 @@ Plug 'neomake/neomake'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
+Plug 'ciaranm/detectindent'
 Plug 'amiorin/vim-project'
 call plug#end()
 
