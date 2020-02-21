@@ -1,0 +1,10 @@
+#!/bin/sh
+CURR_LAYOUT=`setxkbmap -query | awk '/variant/ { print $2 }'`
+if [ "dvorak" = "$CURR_LAYOUT" ]; then
+    setxkbmap us -option caps:swapescape
+    echo "Now Qwerty"
+else
+    setxkbmap us dvorak -option caps:swapescape
+    echo "Now Dvorak"
+fi
+
