@@ -13,6 +13,11 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'ciaranm/detectindent'
 Plug 'amiorin/vim-project'
+Plug 'dbmrq/vim-ditto'
+Plug 'easymotion/vim-easymotion'
+Plug 'airblade/vim-gitgutter'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)
