@@ -18,7 +18,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)
 
+" Toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
