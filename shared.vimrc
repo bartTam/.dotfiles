@@ -2,6 +2,9 @@ source $HOME/.config/nvim/config/tabs.vimrc
 source $HOME/.config/nvim/config/format.vimrc
 " source $HOME/.config/nvim/config/python.vimrc
 
+set undofile
+set undodir=/tmp/
+
 " http://cscope.sourceforge.net/cscope_maps.vim
 if has('cscope')
     set cscopetag cscopeverbose
