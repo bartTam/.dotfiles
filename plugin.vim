@@ -19,6 +19,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'preservim/nerdtree'
+Plug 'powerman/vim-plugin-AnsiEsc'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)
