@@ -20,6 +20,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'powerman/vim-plugin-AnsiEsc'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)
