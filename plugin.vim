@@ -6,21 +6,22 @@ if empty(glob('$HOME/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin()
+Plug 'airblade/vim-gitgutter'
+Plug 'amiorin/vim-project'
+Plug 'ciaranm/detectindent'
+Plug 'dbmrq/vim-ditto'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'easymotion/vim-easymotion'
+Plug 'godlygeek/tabular'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'nathanaelkane/vim-indent-guides'
 " Start neomake
 Plug 'neomake/neomake'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-fugitive'
-Plug 'ciaranm/detectindent'
-Plug 'amiorin/vim-project'
-Plug 'dbmrq/vim-ditto'
-Plug 'easymotion/vim-easymotion'
-Plug 'airblade/vim-gitgutter'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'preservim/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 call neomake#configure#automake('nrwi', 500)

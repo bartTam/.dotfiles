@@ -1,3 +1,6 @@
+if filereadable(expand("$HOME/.vimrc_local"))
+    source $HOME/.vimrc_local
+endif
 source $HOME/.config/nvim/config/tabs.vimrc
 source $HOME/.config/nvim/config/format.vimrc
 " source $HOME/.config/nvim/config/python.vimrc
@@ -54,3 +57,6 @@ if has('cscope')
     nmap <C-W><C-\><C-\>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
     nmap <C-W><C-\><C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 endif
+
+" Ctags, check for tags here, if not move up
+set tags=./tags,tags;
